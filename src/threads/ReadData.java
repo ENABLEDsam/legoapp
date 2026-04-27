@@ -21,7 +21,7 @@ public class ReadData implements Runnable{
 	String s=null;
 
 	@Override
-	public void run() {
+	/*public void run() {
 		while (Robot.getRun()==1) {
 			try {
 				Thread.sleep(1);
@@ -58,7 +58,45 @@ public class ReadData implements Runnable{
 	  			e.printStackTrace();
 	            System.out.println("Some problem!");
 	  		}
-		}
+		}*/
+	
+	public void run() {
+
+        try {
+
+            url = new URL("http://10.65.120.31:8080/rest/lego/setvalues/"+Robot.getRun()+"/"+Robot.getSpeed()+"/"+Robot.getTurn());
+
+            conn = (HttpURLConnection)url.openConnection();
+
+            InputStream is=null;
+
+            try {
+
+                is=conn.getInputStream();
+
+            }
+
+            catch (Exception e) {
+
+                System.out.println("Exception conn.getInputSteam()");
+
+                e.printStackTrace();
+
+                System.out.println("Cannot get InputStream!");
+
+            }
+
+            conn.disconnect();
+
+        }
+
+        catch(Exception e) {
+
+            e.printStackTrace();
+
+            System.out.println("Some problem!");
+
+        }
 	}
 
 }
