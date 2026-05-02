@@ -64,7 +64,7 @@ public class ReadData implements Runnable{
 
         try {
 
-            url = new URL("http://10.65.120.31:8080/rest/lego/setvalues/"+Robot.getRun()+"/"+Robot.getSpeed()+"/"+Robot.getTurn());
+            url = new URL("http://176.72.19.156:8080/rest/lego/setvalues/"+Robot.getRun()+"/"+Robot.getSpeed()+"/"+Robot.getTurn());
 
             conn = (HttpURLConnection)url.openConnection();
 
