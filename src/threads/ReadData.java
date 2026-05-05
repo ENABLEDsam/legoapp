@@ -21,7 +21,7 @@ public class ReadData implements Runnable{
 	String s=null;
 
 	@Override
-	/*public void run() {
+	public void run() {
 		while (Robot.getRun()==1) {
 			try {
 				Thread.sleep(1);
@@ -58,9 +58,9 @@ public class ReadData implements Runnable{
 	  			e.printStackTrace();
 	            System.out.println("Some problem!");
 	  		}
-		}*/
-	
-	public void run() {
+		}
+	}
+	/*(public void run() {
 
         try {
 
@@ -97,6 +97,6 @@ public class ReadData implements Runnable{
             System.out.println("Some problem!");
 
         }
-	}
+	}*/
 
 }
