@@ -45,7 +45,7 @@ public class SendData implements Runnable {
 			try {
 
 				// Urli johon data lähetetään
-				url = new URL("http://10.82.95.23:8080/rest/lego/setvalues");
+				url = new URL("http://10.127.6.23:8080/rest/lego/setvalues");
 
 				
                 

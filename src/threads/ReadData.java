@@ -29,7 +29,7 @@ public class ReadData implements Runnable{
 				e.printStackTrace();
 			}
 			try {
-				url = new URL("http://10.82.95.23:8080/rest/lego/getvalues");
+				url = new URL("http://10.127.6.23:8080/rest/lego/getvalues");
 				conn = (HttpURLConnection)url.openConnection();
 				InputStream is=null;
 				try {
