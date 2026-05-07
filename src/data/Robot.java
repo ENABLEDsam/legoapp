@@ -2,11 +2,30 @@ package data;
 
 
 public class Robot {
+	
 	private static int id;
 	private static int speed;
 	private static int turn;
 	private static int run=1;
+	private static int color;
+	private static int distance;
+
 	
+	public static int getColor() {
+    	return color;
+	}
+
+	public static void setColor(int color) {
+   		Robot.color = color;
+	}
+
+	public static int getDistance() {
+    	return distance;
+	}
+
+	public static void setDistance(int distance) {
+    	Robot.distance = distance;
+	}
 	
 	public static int getId() {
 		return id;
